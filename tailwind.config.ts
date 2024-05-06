@@ -19,6 +19,30 @@ const config: Config = {
     },
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [
+    nextui({
+      themes: {
+        light: {
+          layout: {},
+          colors: {
+            background: "#edf6f9", // or DEFAULT
+            primary: "#fcbf49",
+            secondary: "#e76f51",
+          }
+        },
+        dark: {
+          layout: {},
+          colors: {
+            background: "#003049", // or DEFAULT
+            //make the primary text color white
+            foreground: "#CADDF2",
+            primary: "#f4a261",
+            secondary: "#e76f51",
+          }
+        },
+
+      }
+    })
+  ],
 };
 export default config;

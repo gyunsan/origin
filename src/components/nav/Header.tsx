@@ -24,6 +24,7 @@ export default function Header() {
             isBordered
             isMenuOpen={isMenuOpen}
             onMenuOpenChange={setIsMenuOpen}
+            maxWidth="2xl"
         >
             <NavbarContent className="sm:hidden" justify="start">
                 <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
@@ -32,18 +33,18 @@ export default function Header() {
             <NavbarContent className="sm:hidden pr-3" justify="center">
                 <NavbarBrand>
                     <Logo />
-                    <p className="font-bold text-inherit">ACME</p>
+                    <p className="font-bold text-inherit">APP</p>
                 </NavbarBrand>
             </NavbarContent>
 
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
                 <NavbarBrand>
                     <Logo />
-                    <p className="font-bold text-inherit">ACME</p>
+                    <p className="font-bold text-inherit">APP</p>
                 </NavbarBrand>
                 <NavbarItem>
                     <Link color="foreground" href="#">
-                        Features
+                        About
                     </Link>
                 </NavbarItem>
                 <NavbarItem isActive>
@@ -63,7 +64,7 @@ export default function Header() {
                     <Link href="#">Login</Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Button as={Link} color="warning" href="#" variant="flat">
+                    <Button as={Link} color="primary" href="#" variant="flat">
                         Sign Up
                     </Button>
                 </NavbarItem>
