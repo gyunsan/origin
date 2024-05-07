@@ -60,12 +60,12 @@ export default function Home() {
           <div><CircularProgress
             classNames={{
               svg: "w-36 h-36 drop-shadow-md",
-              indicator: "stroke-primary/60",
-              track: "stroke-primary/10",
-              value: "text-3xl font-semibold text-primary/60",
+              indicator: "stroke-white/60",
+              track: "stroke-secondary/10",
+              value: "text-3xl font-semibold text-white/60",
               label: "text-lg",
             }}
-            value={50}
+            value={70}
             strokeWidth={4}
             showValueLabel={true}
             label="Protein"

@@ -33,6 +33,9 @@ const config: Config = {
               DEFAULT: "#4985fc",
               foreground: "#ffffff",
             },
+            danger: "#fc6749",
+            warning: "#fff152",
+            success: "#85fc49"
           }
         },
         dark: {
@@ -48,6 +51,18 @@ const config: Config = {
             secondary: {
               DEFAULT: "#4985fc",
               foreground: "#ffffff",
+            },
+            danger: {
+              DEFAULT: "#fc6749",
+              foreground: "#000000",
+            },
+            warning: {
+              DEFAULT: "#fff152",
+              foreground: "#000000",
+            },
+            success: {
+              DEFAULT: "#85fc49",
+              foreground: "#000000",
             },
           }
         },
