@@ -11,6 +11,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      textUnderlineOffset: {
+        3: '3px',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -25,19 +28,27 @@ const config: Config = {
         light: {
           layout: {},
           colors: {
-            background: "#edf6f9", // or DEFAULT
             primary: "#fcbf49",
-            secondary: "#e76f51",
+            secondary: {
+              DEFAULT: "#4985fc",
+              foreground: "#ffffff",
+            },
           }
         },
         dark: {
           layout: {},
           colors: {
-            background: "#003049", // or DEFAULT
+            background: "#0b1120", // or DEFAULT
             //make the primary text color white
             foreground: "#CADDF2",
-            primary: "#f4a261",
-            secondary: "#e76f51",
+            primary: {
+              DEFAULT: "#fcbf49",
+              foreground: "#000000",
+            },
+            secondary: {
+              DEFAULT: "#4985fc",
+              foreground: "#ffffff",
+            },
           }
         },
 

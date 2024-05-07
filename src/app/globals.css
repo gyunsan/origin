@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-5xl dark:text-white py-4 font-bold text-balance;
+    }
+
+    h2 {
+        @apply text-base pb-4 text-balance;
+    }
+
+    h3 {
+        @apply text-2xl dark:text-white font-medium pt-4 text-balance;
+    }
+
+    p {
+        @apply text-lg py-2 text-balance;
+    }
+
+    p a {
+        @apply dark:text-white font-bold underline underline-offset-8;
+    }
+
+    /* ... */
+}

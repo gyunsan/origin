@@ -33,8 +33,8 @@ export default async function BlogPostPage({ params }: Props) {
 
     return (
         <div>
-            <h2 className="text-4xl my-6">{post.title}</h2>
-            <p>{post.content}</p>
+            <h1>{post.title}</h1>
+            <h2>{post.content}</h2>
             <img src={post.image} alt={post.title} width='300' className="my-6 rounded-lg shadow-xl" />
         </div>
     )
